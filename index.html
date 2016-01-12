@@ -16,6 +16,8 @@
 
     </script>
 -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -23,7 +25,7 @@
         <div class="content">
             <a href="http://hnssn.se/">PICS</a>
             <br>
-            <a href="http://hnssn.se/">ABOUT</a>
+            <a onclick="toggleAbout()">ABOUT</a>
             <br>
             <div class="icons">
                 <a href="https://www.facebook.com/ollenossnevs"><i class="fa fa-facebook-square"></i></a>
@@ -31,6 +33,16 @@
                 <a href="https://www.last.fm/user/ollenossnevs"><i class="fa fa-lastfm-square"></i></a>
             </div>
         </div>
+
+        <div class="about">
+            <p class="heading">ABOUT</p>
+            <p class="text">Hi.</p>
+            <p class="text">My name is Olle Svensson and I'm a 26 year old male living in Gothenburg, Sweden. I am currently pursuing a master's degree in <a href="https://www.chalmers.se/en/education/programmes/masters-info/Pages/Computer-Science-algorithms-languages-and-logic.aspx">Computer Science</a> at Chalmers University of Technology. I am also on leave of absence as a consultant at <a href="http://www.alten.se/en/">Alten Sweden, Embedded Systems.</a></p>
+            <p class="text">If you would like to contact me for any reason, feel free to do so through <a href="https://www.facebook.com/ollenossnevs">Facebook</a> or <a href="https://se.linkedin.com/in/ollenossnevs">LinkedIn.</a></p>
+
+            <p class="close"><a onclick="toggleAbout()">CLOSE</a></p>
+        </div>
     </div>
+
 </body>
 </html>
