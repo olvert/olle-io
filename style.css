@@ -24,17 +24,17 @@ body {
 }
 
 a {
-    color: black;
+    color: #333;
     text-decoration: none;
 }
 
 a:hover {
-    border-bottom: 0.3vw solid black;
+    border-bottom: 0.3vw solid #333;
 }
 
 hr {
     border: 0;
-    border-top: 0.3vw solid black;
+    border-top: 0.3vw solid #333;
 }
 
 .wrap {
@@ -65,8 +65,8 @@ hr {
     padding-left: 2%;
     padding-right: 2%;
 
-    background-color: white;
-}
+    background-color: white }
+
 
 .wrap .content .icons {
     margin-top: 10%;
@@ -98,4 +98,14 @@ hr {
 
 .wrap .content .fa-lastfm-square:hover {
     color: #D31F27
+}
+
+.wrap .content .disabled {
+    color: #666666;
+    text-decoration: line-through;
+    cursor: default;
+}
+
+.wrap .content .disabled:hover {
+    border: 0;
 }
