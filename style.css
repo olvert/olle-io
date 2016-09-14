@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'NeueHaasUnicaPro-Thin';
+    src: url('fonts/NeueHaasUnicaPro-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "neue-haas-unica-regular";
+    src: url("fonts/neue-haas-unica-regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: "neue-haas-unica-medium";
+    src: url("fonts/neue-haas-unica-medium.woff") format('woff');
+}
+
+body {
+    text-align: center;
+
+    font-family: 'neue-haas-unica-medium';
+    font-size: 30px;
+    font-size: 2.5vw;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 0.3vw solid #333;
+}
+
+hr {
+    border: 0;
+    border-top: 0.3vw solid #333;
+}
+
+.wrap {
+    margin-top: 2%;
+
+    max-width: 60%;
+
+    display: inline-block;
+    position: relative;
+}
+
+.wrap img {
+    max-width: 100%;
+}
+
+.wrap .content {
+
+    position: absolute;
+    right: 3%;
+    bottom: 5.5%;
+
+    width: 20%;
+    height: 25%;
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    padding-left: 2%;
+    padding-right: 2%;
+
+    background-color: white }
+
+
+.wrap .content .icons {
+    margin-top: 10%;
+}
+
+.wrap .content .icons a:hover {
+    border: 0;
+}
+
+.wrap .content .fa-facebook-square {
+    float: left;
+}
+
+.wrap .content .fa-facebook-square:hover {
+    color: #3B5998;
+}
+
+.wrap .content .fa-linkedin-square {
+    vertical-align: top;
+}
+
+.wrap .content .fa-linkedin-square:hover {
+    color: #0077B5;
+}
+
+.wrap .content .fa-lastfm-square {
+    float: right;
+}
+
+.wrap .content .fa-lastfm-square:hover {
+    color: #D31F27
+}
+
+.wrap .content .disabled {
+    color: #666666;
+    text-decoration: line-through;
+    cursor: default;
+}
+
+.wrap .content .disabled:hover {
+    border: 0;
+}
