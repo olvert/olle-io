@@ -1,46 +1,32 @@
-@font-face {
-    font-family: 'NeueHaasUnicaPro-Thin';
-    src: url('fonts/NeueHaasUnicaPro-Thin.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: "neue-haas-unica-regular";
-    src: url("fonts/neue-haas-unica-regular.woff") format('woff');
-}
-
-@font-face {
-    font-family: "neue-haas-unica-medium";
-    src: url("fonts/neue-haas-unica-medium.woff") format('woff');
-}
 
 body {
     text-align: center;
 
-    font-family: 'neue-haas-unica-medium';
     font-size: 30px;
     font-size: 2.5vw;
+
+    background-color: #0c1114;
 }
 
 a {
-    color: #333;
+    color: #ffffff;
     text-decoration: none;
 }
 
 a:hover {
-    border-bottom: 0.3vw solid #333;
+    border-bottom: 0.3vw solid #ffffff;
 }
 
 hr {
     border: 0;
-    border-top: 0.3vw solid #333;
+    border-top: 0.3vw solid #0c1114;
 }
 
 .wrap {
     margin-top: 2%;
 
-    max-width: 60%;
+    max-width: 45%;
 
     display: inline-block;
     position: relative;
@@ -52,10 +38,6 @@ hr {
 
 .wrap .content {
 
-    position: absolute;
-    right: 3%;
-    bottom: 5.5%;
-
     width: 20%;
     height: 25%;
 
@@ -65,7 +47,9 @@ hr {
     padding-left: 2%;
     padding-right: 2%;
 
-    background-color: white }
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 .wrap .content .icons {
@@ -98,14 +82,4 @@ hr {
 
 .wrap .content .fa-lastfm-square:hover {
     color: #D31F27
-}
-
-.wrap .content .disabled {
-    color: #666666;
-    text-decoration: line-through;
-    cursor: default;
-}
-
-.wrap .content .disabled:hover {
-    border: 0;
 }
