@@ -1,4 +1,8 @@
 
+@font-face {
+    font-family: 'futura'; 
+    src: url(‘https://dl.dropboxusercontent.com/s/goqjwrnufnk3aqn/Futura.ttc’); 
+}
 
 body {
     text-align: center;
@@ -10,6 +14,7 @@ body {
 }
 
 a {
+    font-family: 'futura';
     color: #ffffff;
     text-decoration: none;
 }
@@ -24,7 +29,6 @@ hr {
 }
 
 .wrap {
-    margin-top: 2%;
 
     max-width: 45%;
 
@@ -38,14 +42,10 @@ hr {
 
 .wrap .content {
 
-    width: 20%;
+    width: 100%;
     height: 25%;
 
-    padding-top: 2%;
-    padding-bottom: 2%;
-
-    padding-left: 2%;
-    padding-right: 2%;
+    margin-top: -22%;
 
     margin-left: auto;
     margin-right: auto;
@@ -53,6 +53,11 @@ hr {
 
 
 .wrap .content .icons {
+    width: 20%;
+
+    margin-left: auto;
+    margin-right: auto;
+
     margin-top: 10%;
 }
 
@@ -60,26 +65,22 @@ hr {
     border: 0;
 }
 
-.wrap .content .fa-facebook-square {
-    float: left;
-}
-
 .wrap .content .fa-facebook-square:hover {
     color: #3B5998;
-}
-
-.wrap .content .fa-linkedin-square {
-    vertical-align: top;
 }
 
 .wrap .content .fa-linkedin-square:hover {
     color: #0077B5;
 }
 
-.wrap .content .fa-lastfm-square {
-    float: right;
-}
-
 .wrap .content .fa-lastfm-square:hover {
     color: #D31F27
+}
+
+.wrap .content .menu {
+    display: block;
+}
+
+.wrap .content .menu .item {
+    padding: 2%;
 }
