@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'futura';
-    src: url(fonts/Futura.ttc); 
+    src: url(fonts/Futura.ttc);
 }
 
 body {
@@ -83,4 +83,13 @@ hr {
 
 .wrap .content .menu .item {
     padding: 2%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (orientation:portrait) {
+  .wrap {
+    max-width: 90%;
+    margin-top: 20%;
+  }
 }
