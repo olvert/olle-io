@@ -20,10 +20,17 @@ body {
 a {
     text-decoration: none;
     color: #ffffff;
+    border-bottom: 0.3vw solid rgba(255,255,255, 0);
 }
 
 a:hover {
-    border-bottom: 0.3vw solid #ffffff;
+    border-bottom: 0.3vw solid rgba(255,255,255, 1);
+
+    -webkit-transition: border 500ms;
+    -moz-transition: border 500ms;
+    -ms-transition: border 500ms;
+    -o-transition: border 500ms;
+    transition: border 500ms;
 }
 
 hr {
