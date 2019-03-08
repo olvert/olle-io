@@ -28,3 +28,9 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Yadda yadda
+node_modules
+dist
+
+mix-manifest.json
