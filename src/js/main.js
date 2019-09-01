@@ -1,4 +1,3 @@
-const defaultColor = 'border-white';
 let menu = null;
 
 const init = () => {
@@ -12,16 +11,9 @@ const init = () => {
 }
 
 const onMouseOver = (e) => {
-  // console.log('Mouse over', e);
-  const currentColor = getElemColor(e);
-  menu.classList.remove(defaultColor);
-  menu.classList.add(currentColor);
 };
 
 const onMouseLeave = (e) => {
-  const currentColor = getElemColor(e);
-  menu.classList.remove(currentColor);
-  menu.classList.add(defaultColor);
 };
 
 const getElemColor = e => e.target.dataset.color;
