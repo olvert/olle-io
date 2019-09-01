@@ -1,109 +1,14 @@
-
-@font-face {
-    font-family: 'futura';
-    src: url(fonts/Futura.ttc);
-}
-
-body {
-    text-align: center;
-
-    font-size: 30px;
-    font-size: 2.5vw;
-
-    background-color: #0c1114;
-
-    font-family: 'futura';
-    color: #ffffff;
-
+#menu {
+    transition: all 300ms;
 }
 
 a {
-    text-decoration: none;
-    color: #ffffff;
-    border-bottom: 0.3vw solid rgba(255,255,255, 0);
+    @apply text-5xl inline-block border-b-6 border-transparent my-1;
+
+    transition: all 300ms;
+
+    &:hover {
+        transform: translateX(5px);
+    }
 }
 
-a:hover {
-    border-bottom: 0.3vw solid rgba(255,255,255, 1);
-
-    -webkit-transition: border 500ms;
-    -moz-transition: border 500ms;
-    -ms-transition: border 500ms;
-    -o-transition: border 500ms;
-    transition: border 500ms;
-}
-
-hr {
-    border: 0;
-    border-top: 0.3vw solid #0c1114;
-}
-
-.wrap {
-
-    max-width: 45%;
-
-    display: inline-block;
-    position: relative;
-}
-
-.wrap img {
-    max-width: 100%;
-}
-
-.wrap .content {
-
-    width: 100%;
-    height: 25%;
-
-    margin-top: -22%;
-
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.wrap .content .icons {
-    width: 20%;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    margin-top: 10%;
-}
-
-.wrap .content .icons a:hover {
-    border: 0;
-}
-
-.wrap .content .fa-facebook-square:hover {
-    color: #3B5998;
-}
-
-.wrap .content .fa-linkedin-square:hover {
-    color: #0077B5;
-}
-
-.wrap .content .fa-lastfm-square:hover {
-    color: #D31F27
-}
-
-.wrap .content .menu {
-    display: block;
-}
-
-.wrap .content .menu .item {
-    padding: 2%;
-}
-
-.error {
-    margin-top: 45vh;
-}
-
-/* MEDIA QUERIES */
-
-@media screen and (orientation:portrait) {
-  .wrap {
-    max-width: 90%;
-    margin-top: 20%;
-  }
-}

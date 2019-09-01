@@ -5,7 +5,6 @@
   <title>Olle Svensson</title>
   <link rel="shortcut icon" href="images/favicon.png">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -19,23 +18,25 @@
   </script>
 
 </head>
-<body>
-  <div class="container mx-auto">
-    <div class="wrap">
-      <img src="images/am.png">
-      <div class="content">
-        <div class="menu">
-          <a class="item" href="https://github.com/olvert">Projects</a>
-          <a class="item" href="http://pics.olle.io">Pictures</a>
-          <a class="item" href="http://waves.olle.io">Waves</a>
+<body class="bg-blackish text-white font-futura">
+  <div class="container mx-auto h-screen flex flex-col items-center justify-center">
+    <div id="menu" class="w-128 relative flex flex-col border-6 border-white px-16 py-10">
+      <div class="flex flex-col">
+        <div>
+          <a class="hover:text-green" data-color="border-green" href="https://www.last.fm/user/ollenossnevs">Last.fm</a>
         </div>
-        <div class="icons">
-          <a href="https://www.facebook.com/ollenossnevs"><i class="fa fa-facebook-square"></i></a>
-          <a href="https://se.linkedin.com/in/ollenossnevs"><i class="fa fa-linkedin-square"></i></a>
-          <a href="https://www.last.fm/user/ollenossnevs"><i class="fa fa-lastfm-square"></i></a>
+        <div>
+          <a class="hover:text-violet" data-color="border-violet" href="https://github.com/olvert">GitHub</a>
+        </div>
+        <div>
+          <a class="hover:text-cyan" data-color="border-cyan" href="https://se.linkedin.com/in/ollenossnevs">LinkedIn</a>
+        </div>
+        <div>
+          <a class="hover:text-blue" data-color="border-blue" href="https://www.facebook.com/ollenossnevs">Facebook</a>
         </div>
       </div>
     </div>
   </div>
 </body>
+<script src="js/main.js"></script>
 </html>

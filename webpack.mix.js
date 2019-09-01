@@ -47,6 +47,8 @@ mix.sass('src/scss/app.scss', 'dist/style.css')
     postCss: [ tailwindcss('tailwind.config.js') ],
   });
 
+mix.js('src/js/main.js', 'dist/js');
+
 mix.copyDirectory('src/html', 'dist');
 mix.copyDirectory('src/images', 'dist/images');
 mix.copyDirectory('src/fonts', 'dist/fonts');
