@@ -1,7 +1,11 @@
 a {
-    @apply text-5xl inline-block border-b-6 border-transparent my-1;
+    @apply text-4xl inline-block border-b-6 border-transparent my-1;
 
-    transition: all 300ms;
+    @screen lg {
+        @apply text-5xl;
+    }
+
+    transition: color 300ms, transform 300ms;
 
     &:hover {
         @apply text-violet;
