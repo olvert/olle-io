@@ -1,5 +1,5 @@
-const cb = require('./cache-bust');
-const log = require('./log');
+const cb = require('../modules/cache-bust');
+const log = require('../modules/log');
 
 const distPath = 'dist/'
 
