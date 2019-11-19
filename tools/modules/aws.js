@@ -8,3 +8,11 @@ module.exports.sync = () => {
 
   exec(`aws s3 sync dist/ ${bucketPath}`, options);
 };
+
+module.exports.invalidate = () => {
+  const distributionId = process.env.AWS_CLOUDFRONT_DIST_ID;
+  const options = getExecOptions();
+  const exec = getExec();
+
+  exec(`aws cloudfront create-invalidation --distribution-id ${distributionId} --paths "/*"`, options);
+};

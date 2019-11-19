@@ -10,7 +10,8 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "clean": "rm -rf dist",
     "cache-bust": "node tools/scripts/bust.js",
-    "aws-sync": "env-cmd node tools/scripts/sync.js"
+    "aws-sync": "env-cmd node tools/scripts/sync.js",
+    "aws-invalidate": "env-cmd node tools/scripts/invalidate.js"
   },
   "devDependencies": {
     "chalk": "^3.0.0",
